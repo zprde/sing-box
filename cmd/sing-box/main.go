@@ -1,4 +1,4 @@
-package main
+package cmd
 
 import (
 	"context"
@@ -72,3 +72,5 @@ func preRun(cmd *cobra.Command, args []string) {
 		configPaths = append(configPaths, "config.json")
 	}
 }
+
+var SingBoxCommand = mainCommand
